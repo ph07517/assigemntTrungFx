@@ -1,0 +1,71 @@
+@keyframes start {
+    0% { opacity: 0%;}
+    100% {opacity: 80%;}
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(image/thiennhien.jpg);
+    background-size:initial;
+    background-repeat: no-repeat;
+}
+#content2{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+h1{ 
+    opacity: 0;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-family:'Literata', serif ;
+    color: #0060ff;
+    margin-top: 5%;
+}
+#content2 p{
+    opacity: 0;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-family:'Literata', serif ;
+    font-size:x-large;
+    color: white;
+}
+form{
+    opacity: 0;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    padding:2vw;
+    color:black;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#box{
+    box-sizing:border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+}
+#question{
+    width:100%;
+    min-height: 5rem;
+}
+button{float: right;}
+@media(min-width:992px){body {background-size: cover;}}
+footer {background-blend-mode:multiply;}
+#content2 {margin-top:5%}
+footer{ margin-top:10vw;}

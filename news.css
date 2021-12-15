@@ -1,0 +1,32 @@
+body{background-image:url(image/cho_noi_2.jpg);}
+h2 {
+    font-family: 'Literata', serif;
+    text-align: center;color:#00aeff;
+    margin:auto;
+    opacity: 0;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+.column{
+    opacity: 0;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+#content2 p {
+    padding:0 3%;
+    text-align:left;
+    height:3.5rem;
+    color:black;
+    font-family: arial;
+    font-size: 1rem;
+    margin: 1%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media(min-width:992px){
+    .column{width: 32%;}
+}

@@ -1,0 +1,193 @@
+body {
+    min-width: 350px;
+    width: 85%;
+    margin:auto;
+    box-sizing: border-box;
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+    background-attachment: fixed;
+}
+
+header{
+    position: relative;
+    top:0px;
+    height: 100px;
+    display:inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #f7f7f7;
+}
+#logo{
+    display:inline-flex;
+    align-items: center;
+}
+nav ul{list-style-type: none;display: flex;}
+nav li{display: inline-flex;}
+#logo img{display: none;width:auto; height: 100%;}
+#logo p {display: none;}
+nav a{margin:1vw;font-size: 1rem;}
+nav a:link, nav a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00AEEF;
+}
+#content{
+    width: 80%;
+    box-sizing: border-box;
+    display:flex;
+}
+#banner{
+    width:100%; 
+    position: relative;
+}
+#banner img{
+    display:none;
+    width: 100%;
+}
+
+#bait h1 {font-family: 'Literata', serif;font-size: 3rem;}
+#guide  h2{font-size: 4vw;}
+#content, #foot {width:85%; margin:auto; box-sizing: border-box;}
+#photos {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+    height: fit-content;
+}
+.column{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.column img {
+    width: 100%;
+    margin-bottom:5vw;
+}
+footer{
+    background-color: white;
+}
+footer h3{
+    font-family: 'Literata', serif;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+#gmaps{width: 85%;margin:auto;}
+iframe{width: 100%;}
+@media (min-width:540px){#logo img{display: initial;}}
+@media (min-width:768px){
+    body {width: 100%;}
+    #logo p{
+        display: initial;
+        margin:2vw;font-family: 'Dancing Script', cursive;
+        font-size: x-large;
+        color:#00AEEF;
+    }
+    nav a{font-size: 1rem;}
+    #banner{
+        opacity: 0;
+        animation-name: start;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    #photos{
+        opacity: 0;
+        animation-name: start;
+        animation-duration: 1s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+    }
+    #banner img{ display: initial;}
+    #content, #foot {width:95%; margin:auto; box-sizing: border-box;}
+    .column {width: 50%;align-items: center;}
+    .column img{width: 90%;}
+    hr{display: none;}
+    #guide{
+        opacity: 0;
+        animation-name: start;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+    #bait{
+        position: absolute;
+        top: 22%;
+        left: 12%;
+        color:white;
+        line-height: 15px;
+        font-size: 1.2rem;
+    }
+    #bait h1, #guide h2 {font-size: 5vw;}
+    #guide h2, #guide p {
+        position: relative;
+        left:2.5%;}
+    #photos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    footer{
+        margin-top:20px;
+        width: 100%;
+        opacity: 0;
+        animation-name: start;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+    #gmaps{width:95%;}
+}
+@media (min-width:992px) {
+    #logo p{display: initial;}
+    #content{width: 100%; margin: auto;background-color:rgb(239 239 239);}
+    #guide{width: 92%; margin:auto;}
+    #bait{
+        color:white;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        line-height: 12px;
+    }
+    #bait h1 {font-family: 'Crimson Pro', serif;font-size: 5vw;}
+    #bait P {font-size: 1.5vw;}
+    #guide h2 {font-size: 2.5vw;}
+    #guide p {font-size: 1.5vw;}
+    hr {display: none;}
+    .column{width: 33.3333%;justify-content: center;align-items: center;}
+    .column img {width:90%;margin-bottom: 2vw;}
+    #photos{width:95%; margin:auto;justify-content:center;}
+    footer{ width: 100%; background-color: #f7f7f7;}
+    #foot{
+        width: 92%;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin:auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .column2{
+        height: auto;
+        width: 31%;
+        padding:1%;
+    }
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+}
+@keyframes start {
+    0% { opacity: 0%;}
+    100% {opacity: 100%;}
+}

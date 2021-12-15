@@ -1,0 +1,79 @@
+@keyframes start {
+    0% { opacity: 0%;}
+    100% {opacity: 95%;}
+}
+body{background-image: url(image/The-Mong-Village-Sapa-ivivu-5.jpg);}
+#content2 {
+    margin-top: 2%;
+}
+.column{
+    background-color: white;
+    width: 95%;
+    margin:1% auto;
+    box-sizing: border-box;
+    align-self: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.column img{
+    width: 85%;
+    position: relative;
+    opacity: 0;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    margin: 5% auto 0;;
+    align-items: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.column a{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+    
+.dont-see{
+    width: 100%;
+    margin-top:8%;
+    font-family: serif;
+    color: #00AEEF;
+    text-align: center;
+    background-color: white;
+    opacity: 0;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+#content2 p {color:#00AEEF;font-family:'Literata', serif; font-size: x-large;margin:1%;}
+#content2 {
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+@media (min-width:768px) {
+    .column{
+        width: 48%;
+        margin:1% auto;
+    }
+}
+@media (min-width:992px) {
+    .column{
+        width: 23%;
+        margin:1% auto;
+    }
+}
+footer{animation-delay: 1.5s;}

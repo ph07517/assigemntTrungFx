@@ -1,0 +1,47 @@
+@keyframes start {
+    0% { opacity: 0%;}
+    100% {opacity: 80%;}
+}
+body{background-image: url(image/VNO-doson2.jpg);}
+#info { 
+    width: 85%;
+    margin: auto;
+    line-height: 1.5rem;
+    opacity: 0;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-family:'Literata', serif ;
+    color: #00aeef;
+    background-color: white;
+    border-radius: 10px;
+}
+#photoul {
+    background-color: white;
+    width: 50%;
+    box-sizing: border-box;
+    align-self: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+#photoul img{width: 85%;border-radius: 10px;margin:1%}
+#gmaps{
+    width: 43%;
+    margin:auto;
+    margin-bottom:4%;
+}
+.fb-page{width: 43%;margin:auto;}
+#location {
+    display:flex;
+}
